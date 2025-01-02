@@ -58,6 +58,10 @@ stdenv.mkDerivation rec {
       url = "https://sources.debian.org/data/main/c/chntpw/140201-1/debian/patches/14_improve_description";
       sha256 = "11y5kc4dh4zv24nkb0jw2zwlifx6nzsd4jbizn63l6dbpqgb25rs";
     })
+    (fetchpatch {
+      url = "https://git.launchpad.net/ubuntu/+source/chntpw/plain/debian/patches/17_hexdump-pointer-type.patch";
+      sha256 = "sha256-ir9LFl8FJq141OwF5SbyVMtjQ1kTMH1NXlHl0XZq7m8=";
+    })
   ];
 
   installPhase = ''
